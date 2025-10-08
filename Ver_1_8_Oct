@@ -1,0 +1,23 @@
+Planning phase. Design and research in progress.
+
+This project concept explores how electrical power consumption can be measured, calculated, and logged using an Arduino microcontroller. It aims to combine sensor interfacing, analog signal processing, and data visualization to demonstrate real-world energy monitoring principles.
+
+## Project Goals
+
+- Measure voltage and current using ZMPT101B and ACS712 sensors
+- Calculate instantaneous and RMS power
+- Log results to Excel or Google Sheets
+- Trigger LED or buzzer alerts when power exceeds a set threshold
+
+## Challenges
+
+- Not blowing myself up on AC mains (might keep low-voltage DC for simplicity - avoid phase shifts and cooking myself)
+- Sensors like the ACS712 (current) and ZMPT101B (voltage) have offsets and drift slightly with temperature (could calc averages)
+- How to know readings are correct? Compare sensor readings to multimeter/ power meter at the same time.
+
+  
+## Planned Skills Demonstrated
+- Circuit theory and sensor calibration  
+- Arduino programming and data processing  
+- Serial communication and data logging  
+- Efficient project planning and documentation 
