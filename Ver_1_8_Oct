@@ -21,3 +21,23 @@ This project concept explores how electrical power consumption can be measured, 
 - Arduino programming and data processing  
 - Serial communication and data logging  
 - Efficient project planning and documentation 
+
+## ACS712 Current Sensor
+(hall effect current sensor, will convert the magnetic field created by the current flowing through the sensor to voltage (direct proportionality)
+→ sensor is able to generate voltage linear with the current that flows through the sensor
+## 3 types according to max current measurement - 5A, 20A, 30A
+## ACS712-05 ## (±5 A) Highest sensitivity, so easier to measure small currents, safer and more practical.
+(voltage midpoint is half supply voltage)
+At 0 amps, the sensor’s output = 0.5 × 𝑉𝑐𝑐
+If 𝑉𝑐𝑐 = 5 V → output = 2.5 V
+
+Version	Range (±A)	  Sensitivity (mV/A)	   Output example for +1 A
+ACS712-05	±5 A	      185 mV/A	             2.5 V + 0.185 V = 2.685 V
+
+General formula: 𝑉𝑜𝑢𝑡 ​= 𝑉𝑐𝑐/2 +(𝐼 𝑆)
+Where:
+𝑉𝑜𝑢𝑡 = output voltage 
+𝑉𝑐𝑐/2 = zero-current baseline
+𝐼 = current (amps)
+𝑆 = sensitivity (volts per amp)
+  
